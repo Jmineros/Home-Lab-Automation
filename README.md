@@ -1,12 +1,15 @@
-# Kuroiokami Home Lab
-Documentation and configuration scripts for a centralized home network and media server.
+# Home Lab Automation & Network Services
+Automation tools for a centralized home network and media environment.
 
-## Architecture
-- **Server (Kuroiokami)**: Windows-based file server hosting media and local backups.
-- **Network Services**: Raspberry Pi running Ubuntu Server with Pi-hole for network-wide DNS ad-blocking and Unbound.
-- **Storage**: RAID-adjacent network shares (U: through Z:).
+## 🏗️ Architecture
+- **Primary Media Server**: Windows-based file host managing distributed storage for media and family backups.
+- **DNS Security**: Raspberry Pi running Ubuntu Server with Pi-hole for network-wide ad-blocking.
+- **Storage**: Mapped network shares (U: through Z:) organized by media type.
 
-## Projects
-- **Pi-hole Setup**: Scripts for updating blocklists and monitoring DNS traffic.
-- **Drive Mapping**: Batch scripts for re-mapping network shares after server reboots.
-- **Monitoring**: Latency and uptime tracking for local network nodes.
+## 🛠️ Scripts
+- **Plex_Inventory.bat**: Generates timestamped CSV reports for media auditing.
+- **MapDrives.bat**: Reconnects network shares using local variables to maintain privacy.
+- **Update-PiHole.sh**: Shell script for maintaining DNS blocklist integrity.
+
+## 🔒 Security Note
+Internal hostnames and IP addresses have been scrubbed from this public repository to follow Blue Team security best practices.
